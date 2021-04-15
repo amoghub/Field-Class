@@ -20,7 +20,7 @@ If all 4 coordinates are connected, they form an imaginary box, or border, that 
 
 Let us make a Field object X, which has the values:
 
-`
+```
 {1,  2,  3,  4,  5,  6},
 
 {1,  2,  3,  4,  5,  6},
@@ -30,6 +30,6 @@ Let us make a Field object X, which has the values:
 {1,  2,  3,  4,  5,  6},
 
 {1,  2,  3,  4,  5,  6}
-`
+```
 
 If you were to output the result of X.Weight(1, 0, 4, 2), the result would be 42.
