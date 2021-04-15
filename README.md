@@ -8,7 +8,7 @@ Field was a project made during my 335 Software Analysis and Design 3 class, and
 
 Two constructors are modified for Field to be properly executed and read, which can be seen in the ".h" file. Move and copy constructors are both made in O(n) time, where n is the amount of elements that are read from all vectors that are given to a Field object.
 
-##Functions
+## Functions
 
 There are two functions made in the Field class, which are Weight() and PathCost(). 
 
