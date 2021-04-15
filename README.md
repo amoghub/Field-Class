@@ -32,15 +32,16 @@ Let us make a Field object X, which has the values:
 
 Let's input the numbers 1, 0, 4, and 2 into the parameters of the Weight function. This would make a pairing of (1, 0) and (4, 2). Now lets remove the commas and brackets around the values, to give a better view of what 2D array was made when those numbers are inputted into the Weight function.
 
-```
-{1,  2,  3,  4,  5,  6},
 
-{1,  2,  3,  4,  5,  6},
+1   **2   3   4   5**   6
 
-{1,  2,  3,  4,  5,  6},
+1   **2   3   4   5**   6
 
-{1,  2,  3,  4,  5,  6},
+1   **2   3   4   5**   6
 
-{1,  2,  3,  4,  5,  6}
-```
+1   **2   3   4   5**   6
+
+1    2    3    4    5    6
+
+Try adding the bolded text together, and see what you get! The answer should be 42. (Weight will return the same output with inputs (1, 2, 4, 0), as the corners are the same.)
 
