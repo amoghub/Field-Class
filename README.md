@@ -10,11 +10,12 @@ Two constructors are modified for Field to be properly executed and read, which 
 
 ## Functions
 
+### Weight
 There are two functions made in the Field class, which are Weight() and PathCost(). 
 
 The Weight() function has 4 parameters, each being an integer coordinate corresponding to a location within the Field object. The coordinates are read as (X1, Y1, X2, Y2), which makes a total of 2 pairs. The 2 pairs can be seen as the two corners of a 2D array within the Field object, and the result of the function is the sum of every element within the 2D array (See example for demonstration).
 
-### Weight Example:
+Weight Example:
 
 Let us make a Field object X, which has the values:
 
@@ -45,3 +46,5 @@ Let's input the numbers 1, 0, 4, and 2 into the parameters of the Weight functio
 
 Try adding the bolded text together, and see what you get! The answer should be 42. (Weight will return the same output with inputs (1, 2, 4, 0), as the corners are the same.)
 
+
+The function PathCost computes the smallest possible path to 
