@@ -55,7 +55,7 @@ The function PathCost computes the "cheapest" possible path from the upper left 
 
 PathCost Example:
 
-Lets use the same Field object used in the Weight function, and show how it computes PathCost().
+Lets use the same Field object X used in the Weight function, and show how it computes PathCost().
 
 **1**    2    3    4    5    6
 
