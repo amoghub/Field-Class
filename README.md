@@ -12,11 +12,9 @@ Two constructors are modified for Field to be properly executed and read, which 
 
 There are two functions made in the Field class, which are Weight() and PathCost(). 
 
-The Weight() function has 4 parameters, each being an integer coordinate corresponding to a location within the Field object. The coordinates are read as (X1, Y1, X2, Y2), which makes a total of 2 pairs. The 2 pairs are then put into the 
+The Weight() function has 4 parameters, each being an integer coordinate corresponding to a location within the Field object. The coordinates are read as (X1, Y1, X2, Y2), which makes a total of 2 pairs. The 2 pairs can be seen as the two corners of a 2D array within the Field object, and the result of the function is the sum of every element within the 2D array (See example for demonstration).
 
-If all 4 coordinates are connected, they form an imaginary box, or border, that is inside the Field object. The output of Weight() is the sum of all numbers that are within the border of the 4 inputted coordinates. 
-
-### Example:
+### Weight Example:
 
 Let us make a Field object X, which has the values:
 
@@ -32,4 +30,16 @@ Let us make a Field object X, which has the values:
 {1,  2,  3,  4,  5,  6}
 ```
 
-If you were to output the result of X.Weight(1, 0, 4, 2), the result would be 42.
+Let's input the numbers 1, 0, 4, and 2 into the parameters of the Weight function. This would make a pairing of (1, 0) and (4, 2). Now lets remove the commas and brackets around the values, to give a better view of what 2D array was made when those numbers are inputted into the Weight function.
+
+```
+{1,  **2**,  **3**,  **4**,  **5**,  6},
+
+{1,  **2**,  **3**,  **4**,  **5**,  6},
+
+{1,  **2**,  **3**,  **4**,  **5**,  6},
+
+{1,  **2**,  **3**,  **4**,  **5**,  6},
+
+{1,  2,  3,  4,  5,  6}
+```
